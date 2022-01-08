@@ -14,7 +14,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://tsimeonov.github.io/Architect-Landing-Page/
+- Live Site URL: https://tsimeonov.github.io/Time-Tracking-Dashboard/
 
 ### Built with
 
