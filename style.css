@@ -1,0 +1,385 @@
+/* CSS Variables */
+:root {
+  --white: #fff;
+  --blue: hsl(246, 80%, 60%);
+  --lightRedWork: hsl(15, 100%, 70%);
+  --softBlue: hsl(195, 74%, 62%);
+  --lightRedStudy: hsl(348, 100%, 68%);
+  --limeGreen: hsl(145, 58%, 55%);
+  --violet: hsl(264, 64%, 52%);
+  --softOrange: hsl(43, 84%, 65%);
+  --veryDarkBlue: hsl(226, 43%, 10%);
+  --darkBlue: hsl(235, 46%, 20%);
+  --desaturatedBlue: hsl(235, 45%, 61%);
+  --paleBlue: hsl(236, 100%, 87%);
+  --blueHover: hsla(236, 41%, 34%, 1);
+}
+
+html {
+  height: 130vh;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--veryDarkBlue);
+  font-size: 18px;
+  color: var(--white);
+  height: 100vh;
+}
+
+main {
+  width: 90%;
+  min-width: 320px;
+  max-width: 400px;
+  height: 120vh;
+  margin: 0 auto;
+  margin-top: 3em;
+  text-align: center;
+}
+
+/* All Sections 
+------------------------------------------- */
+
+.work-img,
+.play-img,
+.study-img,
+.exercise-img,
+.social-img,
+.selfCare-img {
+  height: 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work-img img,
+.play-img img,
+.study-img img,
+.exercise-img img,
+.social-img img,
+.selfCare-img img {
+  position: absolute;
+  top: -12px;
+  right: 12px;
+}
+
+.duration,
+.work-main,
+.play-main,
+.study-main,
+.exercise-main,
+.social-main,
+.selfCare-main {
+  background-color: var(--darkBlue);
+  border-radius: 12px;
+  height: 120px;
+}
+
+.work-main:hover,
+.play-main:hover,
+.study-main:hover,
+.exercise-main:hover,
+.social-main:hover,
+.selfCare-main:hover {
+  cursor: pointer;
+  background-color: var(--blueHover);
+}
+
+.top-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.top-row p {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.bottom-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.bottom-row p {
+  margin: 0;
+}
+
+.bottom-row p:nth-of-type(1) {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.bottom-row p:nth-of-type(2) {
+  font-size: 15px;
+  color: var(--paleBlue);
+}
+
+/* User Section 
+------------------------------------------- */
+
+.user-grid {
+  background-color: var(--blue);
+  border-radius: 15px;
+  /* height: 550px; */
+}
+
+.user {
+  z-index: 1;
+  border-radius: 15px;
+  height: 250px;
+}
+
+.user-header {
+  height: 8em;
+  /* background-color: var(--blue); */
+  z-index: 2;
+  border-radius: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.user-header img {
+  width: 70px;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+}
+
+.user-header h1 {
+  width: 180px;
+  color: var(--paleBlue);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+span {
+  font-family: Rubik;
+  font-style: normal;
+  display: block;
+  width: 100%;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--white);
+}
+
+.duration {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--paleBlue);
+  font-size: 18px;
+}
+
+.duration p {
+  transition: 0.3s;
+}
+
+.duration p:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Work Section 
+------------------------------------------- */
+
+.work {
+  background-color: var(--lightRedWork);
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+/* Play Section 
+------------------------------------------- */
+
+.play {
+  background-color: var(--softBlue);
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+/* Study Section 
+------------------------------------------- */
+
+.study {
+  background-color: var(--lightRedStudy);
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+/* Exercise Section 
+------------------------------------------- */
+
+.exercise {
+  background-color: var(--limeGreen);
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+/* Social Section 
+------------------------------------------- */
+
+.social {
+  background-color: var(--violet);
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+/* Self Care Section 
+------------------------------------------- */
+
+.selfCare {
+  background-color: var(--softOrange);
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+/* Media Query
+------------------------------------------- */
+
+@media (min-width: 1440px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    align-content: flex-end;
+    align-items: center;
+    height: 100%;
+    max-width: 1000px;
+  }
+
+  .container {
+    max-width: 1200px;
+    height: 550px;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-columns: 1fr;
+    gap: 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "user-grid work-grid play-grid study-grid"
+      "user-grid exercise-grid social-grid selfcare-grid";
+  }
+
+  .user-grid {
+    justify-self: stretch;
+    align-self: stretch;
+    height: 70%;
+    grid-area: user-grid;
+  }
+
+  .user-header img {
+    width: 78px;
+  }
+
+  .user-header h1 {
+    line-height: 3;
+    text-align: left;
+  }
+
+  span {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .user-header {
+    height: 350px;
+    width: 255px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    line-height: 1.5;
+    padding-left: 30px;
+  }
+
+  .duration {
+    height: 195px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 30px;
+  }
+
+  .work-grid {
+    grid-area: work-grid;
+    width: 255px;
+  }
+
+  .play-grid {
+    grid-area: play-grid;
+    width: 255px;
+  }
+
+  .study-grid {
+    grid-area: study-grid;
+    width: 255px;
+  }
+
+  .exercise-grid {
+    grid-area: exercise-grid;
+  }
+
+  .social-grid {
+    grid-area: social-grid;
+  }
+
+  .selfcare-grid {
+    grid-area: selfcare-grid;
+  }
+
+  .work,
+  .play,
+  .study,
+  .exercise,
+  .social,
+  .selfCare {
+    height: 250px;
+    margin: 0;
+  }
+
+  .work-main,
+  .play-main,
+  .study-main,
+  .exercise-main,
+  .social-main,
+  .selfCare-main {
+    height: 220px;
+    padding: 0 30px 0 30px;
+  }
+
+  .top-row {
+    margin: 0 0 20px 0;
+    width: 100%;
+    align-items: baseline;
+  }
+
+  .top-row img {
+    padding-bottom: 5px;
+  }
+
+  .bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .bottom-row p:nth-of-type(1) {
+    font-size: 56px;
+    line-height: 1.2;
+  }
+}

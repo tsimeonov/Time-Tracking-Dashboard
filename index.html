@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Time tracking dashboard</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="user-grid">
+          <!-- User Section -->
+          <div class="user">
+            <div class="user-header">
+              <img src="./images/image-jeremy.png" alt="user image" />
+              <h1>Report for <br /><span>Jeremy Robson</span></h1>
+            </div>
+            <div class="duration">
+              <p id="daily">Daily</p>
+              <p id="weekly">Weekly</p>
+              <p id="montly">Montly</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-grid">
+          <!-- Work Section -->
+          <div class="work">
+            <div class="work-img">
+              <img src="./images/icon-work.svg" alt="briefcase image" />
+            </div>
+            <div class="work-main">
+              <div class="top-row">
+                <p>Work</p>
+                <img src="./images/icon-ellipsis.svg" alt="menu" />
+              </div>
+              <div class="bottom-row">
+                <p id="work-current">5hrs</p>
+                <p id="work-previous">Last Week - 7hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="play-grid">
+          <!-- Play Section -->
+          <div class="play">
+            <div class="play-img">
+              <img src="./images/icon-play.svg" alt="controller image" />
+            </div>
+            <div class="play-main">
+              <div class="top-row">
+                <p>Play</p>
+                <img src="./images/icon-ellipsis.svg" alt="menu" />
+              </div>
+              <div class="bottom-row">
+                <p id="play-current">1hrs</p>
+                <p id="play-previous">Last Week - 2hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="study-grid">
+          <!-- Study Section -->
+          <div class="study">
+            <div class="study-img">
+              <img src="./images/icon-study.svg" alt="image" />
+            </div>
+            <div class="study-main">
+              <div class="top-row">
+                <p>Study</p>
+                <img src="./images/icon-ellipsis.svg" alt="menu" />
+              </div>
+              <div class="bottom-row">
+                <p id="study-current">0hrs</p>
+                <p id="study-previous">Last Week - 1hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exercise-grid">
+          <!-- Exercise Section -->
+          <div class="exercise">
+            <div class="exercise-img">
+              <img src="./images/icon-exercise.svg" alt="image" />
+            </div>
+            <div class="exercise-main">
+              <div class="top-row">
+                <p>Exercise</p>
+                <img src="./images/icon-ellipsis.svg" alt="menu" />
+              </div>
+              <div class="bottom-row">
+                <p id="exercise-current">0hrs</p>
+                <p id="exercise-previous">Last Week - 1hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-grid">
+          <!-- Social Section -->
+          <div class="social">
+            <div class="social-img">
+              <img src="./images/icon-social.svg" alt="image" />
+            </div>
+            <div class="social-main">
+              <div class="top-row">
+                <p>Social</p>
+                <img src="./images/icon-ellipsis.svg" alt="menu" />
+              </div>
+              <div class="bottom-row">
+                <p id="social-current">0hrs</p>
+                <p id="social-previous">Last Week - 1hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="selfcare-grid">
+          <!-- Self Care Section -->
+          <div class="selfCare">
+            <div class="selfCare-img">
+              <img src="./images/icon-self-care.svg" alt="image" />
+            </div>
+            <div class="selfCare-main">
+              <div class="top-row">
+                <p>Self Care</p>
+                <img src="./images/icon-ellipsis.svg" alt="menu" />
+              </div>
+              <div class="bottom-row">
+                <p id="selfCare-current">0hrs</p>
+                <p id="selfCare-previous">Last Week - 1hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
